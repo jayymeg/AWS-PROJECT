@@ -67,7 +67,7 @@ To mitigate these risks, organizations should conduct thorough vendor evaluation
 
 ### 6. Basic Cloud Architecture: - Create a simple diagram of a basic cloud architecture using services like compute (EC2), storage (S3), and networking (VPC). Describe how each service interacts.
 
-![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/simple%20cloud%20architecture)
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/simple%20cloud%20architecture.drawio%20(1).png)
 
 - **Diagram Description**: The architecture is built within a Virtual Private Cloud (VPC) as the networking foundation, segmented into public and private subnets for security. An Amazon EC2 instance (compute) resides in the private subnet, hosting a web application. An Amazon S3 bucket (storage) stores static content, such as images or scripts, accessible by the EC2 instance. An Internet Gateway connects the VPC to the internet, enabling external access, while a NAT Gateway in the public subnet allows the EC2 instance to access external services securely. Security groups and route tables control traffic flow within the VPC.
 - **Service Interactions**:

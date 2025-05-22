@@ -22,7 +22,19 @@ EC2 is an **Infrastructure as a Service** model because AWS manages the underlyi
    - Allow **SSH (Port 22)**: Restrict to your IP (e.g., `192.0.2.0/32`).  
    - Allow **HTTP (Port 80)** and **HTTPS (Port 443)**: Set source to `0.0.0.0/0` (anywhere).  
 7. **Review & Launch**: Confirm settings and click **Launch**.  
-8. **Download Key Pair**: Save the `.pem` file securely (e.g., `my-key.pem`).  
+8. **Download Key Pair**: Save the `.pem` file securely (e.g., `my-key.pem`).
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS%20EC2%20Lab%20guide/D1.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS%20EC2%20Lab%20guide/D2.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS%20EC2%20Lab%20guide/D3.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS%20EC2%20Lab%20guide/D4.png)
+
 
 ---
 
@@ -43,6 +55,11 @@ EC2 is an **Infrastructure as a Service** model because AWS manages the underlyi
      ssh -i "my-key.pem" ubuntu@<PUBLIC_IP>
      ```
 
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS%20EC2%20Lab%20guide/D5.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS%20EC2%20Lab%20guide/D6.png)
+
 ---
 
 ## 4. Install a Web Server (Nginx)  
@@ -53,6 +70,15 @@ sudo yum install nginx -y   # Install Nginx
 sudo systemctl start nginx  # Start the server
 sudo systemctl enable nginx # Enable auto-start
 ````
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS%20EC2%20Lab%20guide/D7.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS%20EC2%20Lab%20guide/D8.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS%20EC2%20Lab%20guide/D9.png)
+
 
 **For Ubuntu:**
 
@@ -88,6 +114,23 @@ sudo systemctl enable nginx # Enable auto-start
 1. Go to **EC2 Dashboard** > **Elastic IPs** > **Allocate Elastic IP Address**.
 2. Click **Allocate**, then **Associate** it with your instance.
 
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS%20EC2%20Lab%20guide/D10.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS%20EC2%20Lab%20guide/D11.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS%20EC2%20Lab%20guide/D12.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS%20EC2%20Lab%20guide/D13.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS%20EC2%20Lab%20guide/D14.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS%20EC2%20Lab%20guide/D15.png)
 **Why Use Elastic IPs?**
 
 * Provides a static public IP (doesn’t change when you stop/start the instance).

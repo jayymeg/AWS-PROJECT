@@ -131,4 +131,7 @@ The following architecture is designed to support 500 users at peak period using
 - **Security**: Apply AWS IAM roles to restrict access, encrypt data in transit with TLS via the ALB, and use security groups to allow only necessary traffic (e.g., HTTP/HTTPS), protecting the application from unauthorized access.
 - **Monitoring and Scaling**: Enable Amazon CloudWatch to monitor performance metrics (e.g., latency, error rates) and set up Auto Scaling policies to adjust container counts dynamically, ensuring the system can handle 500 users efficiently.
 
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS_Java_App_Hosting.drawio.png)
+
+
 This architecture leverages AWS’s ecosystem to deliver a scalable, reliable, and secure solution for the Java application, ensuring optimal performance during peak usage.

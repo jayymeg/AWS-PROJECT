@@ -109,10 +109,10 @@ Create two files on your computer:
 ---
 
 ## Step 8 (Optional): Add a Custom Domain
-	•	Buy a domain (e.g., mywebsite.com).
-	•	Set it up in Route 53.
-	•	Point domain to your CloudFront distribution.
-	•	(This step can be skipped if you don’t have a domain.)
+- •	Buy a domain (e.g., mywebsite.com).
+- •	Set it up in Route 53.
+- •	Point domain to your CloudFront distribution.
+- •	(This step can be skipped if you don’t have a domain.)
 
 ---
 

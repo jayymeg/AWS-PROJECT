@@ -132,10 +132,10 @@ Final Tips
 
 ---
 
-Files Summary
-	•	index.html: Main website content.
-	•	error.html: Optional error page.
-	•	Public access via S3 policy.
-	•	Faster delivery using CloudFront.
+### Files Summary
+- `index.html`: Main website content.
+- `error.html`: Optional error page.
+- Public access via S3 policy.
+- Faster delivery using CloudFront.
 
 ---

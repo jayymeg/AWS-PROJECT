@@ -117,18 +117,18 @@ Create two files on your computer:
 ---
 
 Architecture Overview (Diagram Description)
-	•	S3 Bucket: Stores your HTML and other files.
-	•	CloudFront: Distributes content globally from edge locations.
-	•	Users: Access the site faster from nearby CloudFront servers in India or London.
+- **S3 Bucket**: Stores your HTML and other files.
+- **CloudFront**: Distributes content globally from edge locations.
+- **Users**: Access the site faster from nearby CloudFront servers in India or London.
 
 ---
 
 Final Tips
-	•	Website not showing? Check:
-	•	index.html is uploaded.
-	•	Bucket policy is correct.
-	•	CloudFront can take 10–15 minutes to set up.
-	•	Updating files? Re-upload to S3 and invalidate cache in CloudFront.
+- **Website not showing?** Check:
+- `index.html` is uploaded.
+- Bucket policy is correct.
+- CloudFront can take 10–15 minutes to set up.
+- Updating files? Re-upload to S3 and invalidate cache in CloudFront.
 
 ---
 

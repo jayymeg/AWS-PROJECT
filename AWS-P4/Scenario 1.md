@@ -28,7 +28,7 @@ We’ll start by creating a basic webpage that will be accessed by users.
 	3.	Save the File
 Save it as index.html on your computer (e.g., on your Desktop or in a folder).
 
-⸻
+---
 
 Step 2: Sign Up or Log In to AWS
 	1.	Go to AWS
@@ -40,7 +40,7 @@ Open your browser and go to https://aws.amazon.com.
 	•	Provide your email, password, and billing information (AWS offers a free tier).
 	•	Once logged in, you’ll see the AWS Management Console.
 
-⸻
+---
 
 Step 3: Create an S3 Bucket to Store Your Website
 
@@ -66,7 +66,7 @@ We’ll use Amazon S3 (a storage service) to host your website files.
 	•	Save changes
 	•	Copy the website link to test (e.g., http://my-india-london-website-2025.s3-website.ap-south-1.amazonaws.com)
 
-⸻
+---
 
 Step 4: Secure the S3 Bucket
 	1.	Go to Permissions
@@ -80,7 +80,7 @@ Inside your bucket, go to the Permissions tab.
 	3.	Set Up a Bucket Policy
 We’ll come back to this after creating CloudFront.
 
-⸻
+---
 
 Step 5: Set Up CloudFront to Deliver the Website Quickly
 	1.	Find CloudFront
@@ -99,7 +99,7 @@ In the AWS Console search bar, type CloudFront, then click the service.
 	•	Takes 10–15 minutes
 	•	Copy the Domain Name once deployed (e.g., https://d123456789.cloudfront.net)
 
-⸻
+---
 
 Step 6: Verify the S3 Bucket Policy
 	1.	Return to S3
@@ -123,7 +123,7 @@ Under Permissions > Bucket Policy, you should see something like:
 
 
 
-⸻
+---
 
 Step 7: Test Your Website
 	1.	Use the CloudFront Link
@@ -133,7 +133,7 @@ Open the CloudFront domain (e.g., https://d123456789.cloudfront.net) in your bro
 	•	Or use https://www.webpagetest.org
 	•	Speed should be under 1–2 seconds
 
-⸻
+---
 
 Step 8: Optional – Add a Custom Domain
 	1.	Go to Route 53

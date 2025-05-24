@@ -9,27 +9,27 @@ Host a simple static website in an Amazon S3 bucket and make it fast for users i
 # Step-by-Step Guide for a Beginner
 
 ## Step 1: Sign Into AWS and Open S3
-	•	Log in to AWS.
-	•	In the top search bar, type S3 and click the S3 service.
+- Log in to AWS.
+- In the top search bar, type S3 and click the S3 service.
 
 ---
 
 ## Step 2: Create an S3 Bucket
-	•	Click Create bucket.
-	•	Enter a unique name (e.g., my-first-website-2025).
-	•	Choose a region (e.g., US East (N. Virginia)).
-	•	Uncheck Block all public access.
-	•	Leave defaults and click Create bucket.
+- Click Create bucket.
+- Enter a unique name (e.g., my-first-website-2025).
+- Choose a region (e.g., US East (N. Virginia)).
+- Uncheck Block all public access.
+- Leave defaults and click Create bucket.
 
 ---
 
 ## Step 3: Enable Static Website Hosting
-	•	Click your bucket name.
-	•	Go to Properties > scroll to Static website hosting > click Edit.
-	•	Enable it, then:
-	•	Index document: index.html
-	•	Error document: error.html (optional)
-	•	Click Save changes.
+- Click your bucket name.
+- Go to Properties > scroll to Static website hosting > click Edit.
+- Enable it, then:
+- Index document: index.html
+- Error document: error.html (optional)
+- Click Save changes.
 
 ---
 
@@ -64,14 +64,14 @@ Create two files on your computer:
 ```
 
 
-	•	In S3, go to the Objects tab.
-	•	Click Upload, drag your index.html and error.html files, and confirm upload.
+- In S3, go to the Objects tab.
+- Click Upload, drag your index.html and error.html files, and confirm upload.
 
 ---
 
 ## Step 5: Make Website Public
-	•	Go to Permissions tab > Bucket policy > click Edit.
-	•	Paste the policy below, replacing the bucket name:
+- Go to Permissions tab > Bucket policy > click Edit.
+- Paste the policy below, replacing the bucket name:
 
 
 ```
@@ -88,31 +88,31 @@ Create two files on your computer:
 }
 ```
 
-	•	Click Save changes.
+- Click Save changes.
 
 ---
 
 ## Step 6: Test Your Website
-	•	Go to Properties > Static website hosting.
-	•	Copy the website endpoint URL (e.g., http://my-first-website-2025.s3-website-us-east-1.amazonaws.com).
-	•	Paste in browser—you should see your site!
+- Go to Properties > Static website hosting.
+- Copy the website endpoint URL (e.g., http://my-first-website-2025.s3-website-us-east-1.amazonaws.com).
+- Paste in browser—you should see your site!
 
 ---
 
 ## Step 7: Speed It Up with CloudFront
-	•	In AWS Console, search for CloudFront > click Create Distribution.
-	•	Origin domain: Use your S3 website endpoint (not the bucket name).
-	•	Set Viewer protocol policy: Redirect HTTP to HTTPS.
-	•	Click Create Distribution (wait 10–15 minutes).
-	•	Test the CloudFront URL (e.g., https://d123456789.cloudfront.net).
+- In AWS Console, search for CloudFront > click Create Distribution.
+- Origin domain: Use your S3 website endpoint (not the bucket name).
+- Set Viewer protocol policy: Redirect HTTP to HTTPS.
+- Click Create Distribution (wait 10–15 minutes).
+- Test the CloudFront URL (e.g., https://d123456789.cloudfront.net).
 
 ---
 
 ## Step 8 (Optional): Add a Custom Domain
-- •	Buy a domain (e.g., mywebsite.com).
-- •	Set it up in Route 53.
-- •	Point domain to your CloudFront distribution.
-- •	(This step can be skipped if you don’t have a domain.)
+- Buy a domain (e.g., mywebsite.com).
+- Set it up in Route 53.
+- Point domain to your CloudFront distribution.
+  (This step can be skipped if you don’t have a domain.)
 
 ---
 

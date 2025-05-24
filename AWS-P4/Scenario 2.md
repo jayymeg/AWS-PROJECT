@@ -73,6 +73,7 @@ Create two files on your computer:
 	•	Go to Permissions tab > Bucket policy > click Edit.
 	•	Paste the policy below, replacing the bucket name:
 
+
 ```
 {
   "Version": "2012-10-17",

@@ -162,7 +162,7 @@ In AWS Console, search and open Route 53.
 	6.	Test Your Domain
 	•	Visit https://mywebsite.com and verify it loads
 
-⸻
+---
 
 Step 9: Check Everything Works
 	•	Speed: CloudFront delivers from nearby (e.g., Mumbai, London)

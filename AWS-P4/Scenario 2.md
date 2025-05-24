@@ -37,8 +37,9 @@ Host a simple static website in an Amazon S3 bucket and make it fast for users i
 
 Create two files on your computer:
 
-index.html
+### `index.html`
 
+```html
 <!DOCTYPE html>
 <html>
   <head><title>Hello</title></head>
@@ -47,9 +48,11 @@ index.html
     <p>Welcome to my website! It’s hosted on AWS S3.</p>
   </body>
 </html>
+```
 
-error.html (Optional)
+### `error.html (Optional)`
 
+```html
 <!DOCTYPE html>
 <html>
   <head><title>Error</title></head>
@@ -58,6 +61,8 @@ error.html (Optional)
     <p>Something went wrong. Try again later.</p>
   </body>
 </html>
+```
+
 
 	•	In S3, go to the Objects tab.
 	•	Click Upload, drag your index.html and error.html files, and confirm upload.

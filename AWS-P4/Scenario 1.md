@@ -169,7 +169,7 @@ Step 9: Check Everything Works
 	•	Security: S3 is private, CloudFront uses HTTPS
 	•	Cost: Free tier eligible, but monitor AWS Billing Dashboard
 
-
+--- 
 
 What You’ve Done
 	•	Created a static website (index.html)

@@ -6,8 +6,7 @@ This document outlines a cloud-native solution to modernize legacy on-premises a
 ---
 
 ## Architectural Diagram
-![Architecture Diagram](./architecture-diagram.png)  
-*Note: Replace with actual diagram showing the components below.*
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-P4/hybrid_cloud_architecture.drawio.png)
 
 ---
 

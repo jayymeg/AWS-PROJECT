@@ -143,10 +143,10 @@
    nohup node app.js > output.log 2>&1 &
 ```
 
-![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-alb-autoscaling/N13.png)
-
 
 ```
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-alb-autoscaling/N13.png)
+
 ---
 
 ## Step 8: Create Auto Scaling Group (ASG)

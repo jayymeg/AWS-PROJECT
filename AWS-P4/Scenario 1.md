@@ -24,23 +24,38 @@ Go to [AWS](https://aws.amazon.com)
 Log in or create new account
 Access AWS Management Console
 
-![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-P4/Scenario%201/E2.png)
-
 ---
 
 ## Step 3: Create S3 Bucket
 - Search for S3 in console
 - **Create bucket**:
 - **Bucket name**: `my-india-london-website-2025`
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-P4/Scenario%201/E2.png)
+
 - **Region**: `Asia Pacific (Mumbai) ap-south-1`
 - Object Ownership: `ACLs disabled`
 - Uncheck "Block all public access"
 - Upload `index.html`
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-P4/Scenario%201/E3.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-P4/Scenario%201/E4.png)
+  
 - Enable static website hosting:
 - Properties → Static website hosting → Edit
 - Enable hosting
 - Index document: `index.html`
 **Note URL**: `http://my-india-london-website-2025.s3-website.ap-south-1.amazonaws.com`
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-P4/Scenario%201/E5.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-P4/Scenario%201/E6.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-P4/Scenario%201/E7.png)
 
 ---
 ## Step 4: Secure S3 Bucket
@@ -48,6 +63,13 @@ Access AWS Management Console
 Edit → Check "Block all public access" → Save
 Bucket policy will be set later
 
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-P4/Scenario%201/E8.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-P4/Scenario%201/E9.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-P4/Scenario%201/E10.png)
 
 ---
 ## Step 5: Set Up CloudFront
@@ -62,6 +84,8 @@ Search for CloudFront in console
 - Price Class: North America/Europe/Asia/Middle East
 Wait 10-15 minutes for deployment
 **Note Domain Name: `https://d123456789.cloudfront.net`**
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-P4/Scenario%201/E11.png)
 
 
 ---
@@ -87,8 +111,10 @@ Wait 10-15 minutes for deployment
 ## Step 7: Test Your Website
 **Access CloudFront URL: `https://d123456789.cloudfront.net`**
 - Test from India/London using VPN or [WebPageTest](https://www.webpagetest.org)
-Target load time: 1-2 seconds
+- Target load time: 1-2 seconds
 
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-P4/Scenario%201/E12.png)
 
 ---
 ## Step 8: Optional – Custom Domain
@@ -102,15 +128,15 @@ Target load time: 1-2 seconds
 ---
 
 ## Step 9: Final Verification
-Confirm global accessibility
-Validate HTTPS enforcement
-Check S3 bucket security
-Monitor AWS Billing Dashboard
+- Confirm global accessibility
+- Validate HTTPS enforcement
+- Check S3 bucket security
+- Monitor AWS Billing Dashboard
 
 ---
 
 ## Completion
-Created static website
-Hosted on S3 with CloudFront acceleration
-Optimized for India/London users
-Tested performance and security
+- Created static website
+- Hosted on S3 with CloudFront acceleration
+- Optimized for India/London users
+- Tested performance and security

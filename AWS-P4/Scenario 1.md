@@ -29,10 +29,10 @@ Access AWS Management Console
 ---
 
 ## Step 3: Create S3 Bucket
-Search for S3 in console
-Create bucket:
-Bucket name: `my-india-london-website-2025`
-Region: `Asia Pacific (Mumbai) ap-south-1`
+- Search for S3 in console
+- **Create bucket**:
+- **Bucket name**: ```my-india-london-website-2025```
+- **Region**: ```Asia Pacific (Mumbai) ap-south-1```
 Object Ownership: `ACLs disabled`
 Uncheck "Block all public access"
 Upload `index.html`
@@ -41,6 +41,8 @@ Properties → Static website hosting → Edit
 Enable hosting
 Index document: `index.html`
 Note URL: `http://my-india-london-website-2025.s3-website.ap-south-1.amazonaws.com`
+
+---
 ## Step 4: Secure S3 Bucket
 Permissions → Block Public Access:
 Edit → Check "Block all public access" → Save

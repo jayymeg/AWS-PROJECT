@@ -1,3 +1,4 @@
+Here’s your guide converted into clean, structured Markdown (MD) format:
 
 # Step-by-Step Execution of Scenario 1: Building a Fast Website for India and London Users
 
@@ -7,8 +8,6 @@ We’ll create a simple static website, host it on AWS S3, and use CloudFront to
 ---
 
 ## Step 1: Create a Simple Static Website File
-
-We’ll start by creating a basic webpage that will be accessed by users.
 
 1. **Open a Text Editor**  
    Use a text editor like Notepad (Windows), TextEdit (Mac), or any code editor (e.g., VS Code).
@@ -28,25 +27,23 @@ We’ll start by creating a basic webpage that will be accessed by users.
 	3.	Save the File
 Save it as index.html on your computer (e.g., on your Desktop or in a folder).
 
----
+⸻
 
-## Step 2: Sign Up or Log In to AWS
+Step 2: Sign Up or Log In to AWS
 	1.	Go to AWS
-Open your browser and go to https://aws.amazon.com.
+Open your browser and go to https://aws.amazon.com
 	2.	Log In or Sign Up
-	•	If you have an AWS account, click Sign In to the Console and log in.
-	•	If you don’t have an account:
+	•	If you have an AWS account: Click Sign In to the Console and log in.
+	•	If you don’t:
 	•	Click Create an AWS Account
 	•	Provide your email, password, and billing information (AWS offers a free tier).
 	•	Once logged in, you’ll see the AWS Management Console.
 
----
+⸻
 
-## Step 3: Create an S3 Bucket to Store Your Website
-
-We’ll use Amazon S3 (a storage service) to host your website files.
+Step 3: Create an S3 Bucket to Store Your Website
 	1.	Find S3
-	•	In the AWS Console, use the search bar to find S3 and click it.
+In the AWS Console, search for S3 and click it.
 	2.	Create a Bucket
 	•	Click Create bucket
 	•	Bucket Name: e.g., my-india-london-website-2025
@@ -60,15 +57,15 @@ We’ll use Amazon S3 (a storage service) to host your website files.
 	•	Drag and drop index.html
 	•	Click Upload
 	4.	Enable Static Website Hosting
-	•	Go to Properties tab
+	•	Go to the Properties tab
 	•	Scroll to Static website hosting → Click Edit
 	•	Enable it and set Index document to index.html
 	•	Save changes
 	•	Copy the website link to test (e.g., http://my-india-london-website-2025.s3-website.ap-south-1.amazonaws.com)
 
----
+⸻
 
-## Step 4: Secure the S3 Bucket
+Step 4: Secure the S3 Bucket
 	1.	Go to Permissions
 Inside your bucket, go to the Permissions tab.
 	2.	Block Public Access
@@ -80,9 +77,9 @@ Inside your bucket, go to the Permissions tab.
 	3.	Set Up a Bucket Policy
 We’ll come back to this after creating CloudFront.
 
----
+⸻
 
-## Step 5: Set Up CloudFront to Deliver the Website Quickly
+Step 5: Set Up CloudFront to Deliver the Website Quickly
 	1.	Find CloudFront
 In the AWS Console search bar, type CloudFront, then click the service.
 	2.	Create a Distribution
@@ -99,9 +96,9 @@ In the AWS Console search bar, type CloudFront, then click the service.
 	•	Takes 10–15 minutes
 	•	Copy the Domain Name once deployed (e.g., https://d123456789.cloudfront.net)
 
----
+⸻
 
-## Step 6: Verify the S3 Bucket Policy
+Step 6: Verify the S3 Bucket Policy
 	1.	Return to S3
 Go to your S3 bucket.
 	2.	Check the Bucket Policy
@@ -123,9 +120,9 @@ Under Permissions > Bucket Policy, you should see something like:
 
 
 
----
+⸻
 
-## Step 7: Test Your Website
+Step 7: Test Your Website
 	1.	Use the CloudFront Link
 Open the CloudFront domain (e.g., https://d123456789.cloudfront.net) in your browser.
 	2.	Test from India and London
@@ -133,9 +130,9 @@ Open the CloudFront domain (e.g., https://d123456789.cloudfront.net) in your bro
 	•	Or use https://www.webpagetest.org
 	•	Speed should be under 1–2 seconds
 
----
+⸻
 
-## Step 8: Optional – Add a Custom Domain
+Step 8: Optional – Add a Custom Domain
 	1.	Go to Route 53
 In AWS Console, search and open Route 53.
 	2.	Create a Hosted Zone
@@ -162,16 +159,16 @@ In AWS Console, search and open Route 53.
 	6.	Test Your Domain
 	•	Visit https://mywebsite.com and verify it loads
 
----
+⸻
 
-## Step 9: Check Everything Works
+Step 9: Check Everything Works
 	•	Speed: CloudFront delivers from nearby (e.g., Mumbai, London)
 	•	Security: S3 is private, CloudFront uses HTTPS
 	•	Cost: Free tier eligible, but monitor AWS Billing Dashboard
 
---- 
+⸻
 
-### What You’ve Done
+✅ What You’ve Done
 	•	Created a static website (index.html)
 	•	Hosted it on S3 and enabled website hosting
 	•	Used CloudFront to improve performance for India and London
@@ -179,4 +176,4 @@ In AWS Console, search and open Route 53.
 
 Your website is now live and optimized for global delivery!
 
----
+Let me know if you'd like this turned into a downloadable `.md` file!

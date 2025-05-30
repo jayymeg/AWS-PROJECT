@@ -22,22 +22,24 @@ We’ll create a simple static website, host it on AWS S3, and use CloudFront to
      </body>
    </html>
 
-	3.	Save the File
+3. **Save the File**
 Save it as index.html on your computer (e.g., on your Desktop or in a folder).
 
-⸻
+---
 
-Step 2: Sign Up or Log In to AWS
-	1.	Go to AWS
+## Step 2: Sign Up or Log In to AWS
+	
+ 1.	**Go to AWS**
 Open your browser and go to https://aws.amazon.com
-	2.	Log In or Sign Up
+	
+ 2.	**Log In or Sign Up**
 	•	If you have an AWS account: Click Sign In to the Console and log in.
 	•	If you don’t:
 	•	Click Create an AWS Account
 	•	Provide your email, password, and billing information (AWS offers a free tier).
 	•	Once logged in, you’ll see the AWS Management Console.
 
-⸻
+---
 
 Step 3: Create an S3 Bucket to Store Your Website
 	1.	Find S3

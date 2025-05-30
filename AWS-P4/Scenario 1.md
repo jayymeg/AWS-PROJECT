@@ -1,5 +1,3 @@
-Here’s your guide converted into clean, structured Markdown (MD) format:
-
 # Step-by-Step Execution of Scenario 1: Building a Fast Website for India and London Users
 
 ## Objective

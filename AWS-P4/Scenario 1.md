@@ -14,10 +14,20 @@ Create file `index.html`:
 </html>
 ```
 Save the file
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-P4/Scenario%201/E1.png)
+
+---
+
 ## Step 2: Sign Up or Log In to AWS
 Go to [AWS](https://aws.amazon.com)
 Log in or create new account
 Access AWS Management Console
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-P4/Scenario%201/E2.png)
+
+---
+
 ## Step 3: Create S3 Bucket
 Search for S3 in console
 Create bucket:

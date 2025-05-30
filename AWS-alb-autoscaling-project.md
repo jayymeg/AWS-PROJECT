@@ -207,6 +207,9 @@
    * In Auto Scaling Group > **Activity tab**: check scaling events
    * In CloudWatch: monitor CPU usage
 
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-alb-autoscaling/N18.png)
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-alb-autoscaling/N19.png)
 ---
 
 ## Step 10: Clean Up
@@ -229,6 +232,8 @@
    * Go to **VPC Console** > **Delete VPC** > Select `ProjectVPC`
 
 ---
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-alb-autoscaling/N20.png)
 
 ## Key Verification Points
 

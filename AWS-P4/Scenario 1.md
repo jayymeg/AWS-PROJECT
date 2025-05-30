@@ -174,4 +174,3 @@ Step 9: Check Everything Works
 
 Your website is now live and optimized for global delivery!
 
-Let me know if you'd like this turned into a downloadable `.md` file!

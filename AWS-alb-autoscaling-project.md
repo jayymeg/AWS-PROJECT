@@ -195,5 +195,4 @@
 * Health check failures? Ensure Node.js app runs on port 80
 * Cleanup issues? Delete resources in reverse order (ASG first)
 
-```
 

@@ -10,6 +10,8 @@
    - **IPv4 CIDR**: `10.0.0.0/16`
 4. Click **Create**
 
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-alb-autoscaling/N1.png)
+
 ---
 
 ## Step 2: Create Public Subnets
@@ -25,9 +27,21 @@
      - **Name**: `PublicSubnet2`
      - **AZ**: `us-east-1b`
      - **CIDR**: `10.0.2.0/24`
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-alb-autoscaling/N2.png)
+
+
 3. For each subnet:
    - Select subnet, click **Actions** > **Edit subnet settings**
    - Check **Enable auto-assign public IPv4 address**
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-alb-autoscaling/N3.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-alb-autoscaling/N4.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-alb-autoscaling/N5.png)
 
 ---
 
@@ -36,6 +50,12 @@
 1. Go to **Internet Gateways**, click **Create internet gateway**
 2. Name it `ProjectIGW`
 3. Click **Create**, then **Attach to VPC**, and select `ProjectVPC`
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-alb-autoscaling/N6.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-alb-autoscaling/N7.png)
 
 ---
 
@@ -47,6 +67,12 @@
    - **Target**: `ProjectIGW`
 3. Go to **Subnet associations**, and associate both public subnets
 
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-alb-autoscaling/N8.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-alb-autoscaling/N9.png)
+
 ---
 
 ## Step 5: Create Security Groups
@@ -55,9 +81,15 @@
 2. For Load Balancer:
    - **Name**: `LoadBalancer-SG`
    - **Inbound rule**: Allow HTTP (port 80) from `0.0.0.0/0`
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-alb-autoscaling/N10.png)
+
+
 3. For EC2 Instances:
    - **Name**: `WebServer-SG`
    - **Inbound rule**: Allow HTTP (port 80) from `LoadBalancer-SG`
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-alb-autoscaling/N11.png)
 
 ---
 
@@ -73,6 +105,11 @@
    - Create new target group: `ProjectTargetGroup` (HTTP:80)
    - Health checks: Path `/`
 4. Click **Create**
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-alb-autoscaling/N12.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-alb-autoscaling/N100.png)
 
 ---
 
@@ -106,8 +143,10 @@
    nohup node app.js > output.log 2>&1 &
 ```
 
-```
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-alb-autoscaling/N13.png)
+
 ---
+
 ## Step 8: Create Auto Scaling Group (ASG)
 
 1. Go to **Auto Scaling Groups**, click **Create**
@@ -129,6 +168,17 @@
    * **Metric**: CPU Utilization
    * **Target value**: 80%
 5. Click **Create**
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-alb-autoscaling/N14.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-alb-autoscaling/N15.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-alb-autoscaling/N16.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-alb-autoscaling/N17.png)
 
 ---
 

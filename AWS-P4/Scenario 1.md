@@ -33,7 +33,7 @@ Save it as index.html on your computer (e.g., on your Desktop or in a folder).
 Open your browser and go to https://aws.amazon.com
 	
  2.	**Log In or Sign Up**
-	•	If you have an AWS account: Click Sign In to the Console and log in.
+	- **If you have an AWS account: Click Sign In to the Console and log in.**
 	•	If you don’t:
 	•	Click Create an AWS Account
 	•	Provide your email, password, and billing information (AWS offers a free tier).

@@ -21,6 +21,8 @@ Host a simple static website in an Amazon S3 bucket and make it fast for users i
 - Uncheck Block all public access.
 - Leave defaults and click Create bucket.
 
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-P4/Scenario%202/J1.png)
+
 ---
 
 ## Step 3: Enable Static Website Hosting
@@ -30,6 +32,8 @@ Host a simple static website in an Amazon S3 bucket and make it fast for users i
 - Index document: index.html
 - Error document: error.html (optional)
 - Click Save changes.
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-P4/Scenario%202/J2.png)
 
 ---
 
@@ -50,6 +54,9 @@ Create two files on your computer:
 </html>
 ```
 
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-P4/Scenario%202/J3.png)
+
+
 ### `error.html (Optional)`
 
 ```html
@@ -63,9 +70,13 @@ Create two files on your computer:
 </html>
 ```
 
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-P4/Scenario%202/J4.png)
+
 
 - In S3, go to the Objects tab.
 - Click Upload, drag your index.html and error.html files, and confirm upload.
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-P4/Scenario%202/J5.png)
 
 ---
 
@@ -90,12 +101,17 @@ Create two files on your computer:
 
 - Click Save changes.
 
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-P4/Scenario%202/J6.png)
+
 ---
 
 ## Step 6: Test Your Website
 - Go to Properties > Static website hosting.
 - Copy the website endpoint URL (e.g., http://my-first-website-2025.s3-website-us-east-1.amazonaws.com).
 - Paste in browser—you should see your site!
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-P4/Scenario%202/J7.png)
 
 ---
 
@@ -105,6 +121,15 @@ Create two files on your computer:
 - Set Viewer protocol policy: Redirect HTTP to HTTPS.
 - Click Create Distribution (wait 10–15 minutes).
 - Test the CloudFront URL (e.g., https://d123456789.cloudfront.net).
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-P4/Scenario%202/J8.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-P4/Scenario%202/J9.png)
+
+
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/AWS-P4/Scenario%202/J10.png)
 
 ---
 

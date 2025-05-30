@@ -146,6 +146,8 @@ Architecture Overview (Diagram Description)
 - **CloudFront**: Distributes content globally from edge locations.
 - **Users**: Access the site faster from nearby CloudFront servers in India or London.
 
+![my image](https://github.com/jayymeg/AWS-PROJECT/blob/main/aws_s3_cloudfront.drawio.png)
+
 ---
 
 Final Tips

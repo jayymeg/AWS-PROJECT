@@ -33,35 +33,35 @@ Save it as index.html on your computer (e.g., on your Desktop or in a folder).
 Open your browser and go to https://aws.amazon.com
 	
  2.	**Log In or Sign Up**
-	- **If you have an AWS account: Click Sign In to the Console and log in.**
-	- **If you don’t:**
+- If you have an AWS account: Click Sign In to the Console and log in.**
+ - If you don’t:**
  - Click Create an AWS Account
-	•	Provide your email, password, and billing information (AWS offers a free tier).
-	•	Once logged in, you’ll see the AWS Management Console.
+ - Provide your email, password, and billing information (AWS offers a free tier).
+ -Once logged in, you’ll see the AWS Management Console.
 
 ---
 
 Step 3: Create an S3 Bucket to Store Your Website
-	1.	Find S3
+1.	**Find S3** 
 In the AWS Console, search for S3 and click it.
-	2.	Create a Bucket
-	•	Click Create bucket
-	•	Bucket Name: e.g., my-india-london-website-2025
-	•	Region: Asia Pacific (Mumbai) ap-south-1
-	•	Object Ownership: Default (ACLs disabled)
-	•	Block Public Access: Uncheck Block all public access
-	•	Click Create bucket
-	3.	Upload Your Website File
-	•	Click on your new bucket
-	•	Click Upload
-	•	Drag and drop index.html
-	•	Click Upload
-	4.	Enable Static Website Hosting
-	•	Go to the Properties tab
-	•	Scroll to Static website hosting → Click Edit
-	•	Enable it and set Index document to index.html
-	•	Save changes
-	•	Copy the website link to test (e.g., http://my-india-london-website-2025.s3-website.ap-south-1.amazonaws.com)
+2.	**Create a Bucket**
+   - Click Create bucket
+   - Bucket Name: e.g., my-india-london-website-2025
+   - Region: Asia Pacific (Mumbai) ap-south-1
+   - Object Ownership: Default (ACLs disabled)
+   - Block Public Access: Uncheck Block all public access
+   - Click Create bucket
+3.	**Upload Your Website File**
+     - Click on your new bucket
+     - Click Upload
+     - Drag and drop index.html
+     - Click Upload
+4.	**Enable Static Website Hosting**
+- Go to the Properties tab
+- Scroll to Static website hosting → Click Edit
+- Enable it and set Index document to index.html
+- Save changes
+- Copy the website link to test (e.g., http://my-india-london-website-2025.s3-website.ap-south-1.amazonaws.com)
 
 ⸻
 

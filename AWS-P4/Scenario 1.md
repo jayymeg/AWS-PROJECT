@@ -31,34 +31,40 @@ Access AWS Management Console
 ## Step 3: Create S3 Bucket
 - Search for S3 in console
 - **Create bucket**:
-- **Bucket name**: ```my-india-london-website-2025```
-- **Region**: ```Asia Pacific (Mumbai) ap-south-1```
-Object Ownership: `ACLs disabled`
-Uncheck "Block all public access"
-Upload `index.html`
-Enable static website hosting:
-Properties → Static website hosting → Edit
-Enable hosting
-Index document: `index.html`
-Note URL: `http://my-india-london-website-2025.s3-website.ap-south-1.amazonaws.com`
+- **Bucket name**: `my-india-london-website-2025`
+- **Region**: `Asia Pacific (Mumbai) ap-south-1`
+- Object Ownership: `ACLs disabled`
+- Uncheck "Block all public access"
+- Upload `index.html`
+- Enable static website hosting:
+- Properties → Static website hosting → Edit
+- Enable hosting
+- Index document: `index.html`
+**Note URL**: `http://my-india-london-website-2025.s3-website.ap-south-1.amazonaws.com`
 
 ---
 ## Step 4: Secure S3 Bucket
-Permissions → Block Public Access:
+- Permissions → Block Public Access:
 Edit → Check "Block all public access" → Save
 Bucket policy will be set later
+
+
+---
 ## Step 5: Set Up CloudFront
 Search for CloudFront in console
-Create distribution:
-Origin Domain: Select S3 bucket endpoint
-Origin Access: Legacy access identities
-Create new OAI: `MyWebsiteOAI`
-Grant Read Permissions: Yes
-Viewer Protocol Policy: Redirect HTTP to HTTPS
-Default Root Object: `index.html`
-Price Class: North America/Europe/Asia/Middle East
+- **Create distribution**:
+- Origin Domain: Select S3 bucket endpoint
+- Origin Access: Legacy access identities
+- Create new OAI: `MyWebsiteOAI`
+- Grant Read Permissions: Yes
+- Viewer Protocol Policy: Redirect HTTP to HTTPS
+- Default Root Object: `index.html`
+- Price Class: North America/Europe/Asia/Middle East
 Wait 10-15 minutes for deployment
-Note Domain Name: `https://d123456789.cloudfront.net`
+**Note Domain Name: `https://d123456789.cloudfront.net`**
+
+
+---
 ## Step 6: Verify S3 Bucket Policy Check bucket policy matches:
 ```json
 {
@@ -75,21 +81,34 @@ Note Domain Name: `https://d123456789.cloudfront.net`
   ]
 }
 ```
+
+---
+
 ## Step 7: Test Your Website
-Access CloudFront URL: `https://d123456789.cloudfront.net`
-Test from India/London using VPN or [WebPageTest](https://www.webpagetest.org)
+**Access CloudFront URL: `https://d123456789.cloudfront.net`**
+- Test from India/London using VPN or [WebPageTest](https://www.webpagetest.org)
 Target load time: 1-2 seconds
+
+
+---
 ## Step 8: Optional – Custom Domain
-Route 53 → Create hosted zone for your domain
-Create A-record pointing to CloudFront distribution
-Update DNS at domain registrar
-Request SSL certificate in AWS Certificate Manager
-Attach certificate to CloudFront distribution
+- Route 53 → Create hosted zone for your domain
+- Create A-record pointing to CloudFront distribution
+- Update DNS at domain registrar
+- Request SSL certificate in AWS Certificate Manager
+- Attach certificate to CloudFront distribution
+
+
+---
+
 ## Step 9: Final Verification
 Confirm global accessibility
 Validate HTTPS enforcement
 Check S3 bucket security
 Monitor AWS Billing Dashboard
+
+---
+
 ## Completion
 Created static website
 Hosted on S3 with CloudFront acceleration
